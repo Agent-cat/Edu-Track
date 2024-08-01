@@ -15,7 +15,7 @@ const User = () => {
   return (
     <div className="w-full h-screen  bg-black text-white overflow-y-scroll font-bold ">
       
-      <div className="w-full flex flex-col items-center   gap-2">
+      <div className="w-full flex flex-col items-center  gap-2">
       <input
         id="username"
         placeholder="Username"
@@ -33,7 +33,7 @@ const User = () => {
       </button>
       </div>
       <div>
-        <h1 className="text-2xl  text-center mb-6" >{data.length} Contributions are made</h1>
+        <h1 className="text-2xl  text-center mb-6" ><span className="text-red-500">{data.length}</span> Contributions are made</h1>
         {data.map((info, index) => {
           return (
             <div className="border-2 border-black" key={index}>
