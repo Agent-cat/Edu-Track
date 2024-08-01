@@ -37,7 +37,7 @@ const User = () => {
         {data.map((info, index) => {
           return (
             <div className="border-2 border-black" key={index}>
-              <h2>Made By : {info.commit.author.name}</h2>
+              <h2><span className="text-red-500">Made By : </span> {info.commit.author.name}</h2>
               <img
                 className="w-10 h-10"
                 src={data[0].author.avatar_url}
